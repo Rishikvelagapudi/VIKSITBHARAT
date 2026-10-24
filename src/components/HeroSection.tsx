@@ -91,10 +91,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <p className="text-sm sm:text-base md:text-lg font-light text-white/80 max-w-2xl mx-auto tracking-wide leading-relaxed px-4 pt-1">
             Empowering 1.4 Billion dreams through bold innovation, fearless intellect, and sovereign technological supremacy by 2047.
           </p>
-
-          <p className="text-xs sm:text-sm font-mono uppercase tracking-[0.25em] text-[#FF9933] font-semibold pt-1">
-            — युवा शक्ति • राष्ट्र शक्ति • विकसित भारत @ 2047 —
-          </p>
         </motion.div>
 
         {/* ONLY ONE Call to Action: Launch Project */}
