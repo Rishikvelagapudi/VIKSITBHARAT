@@ -1,0 +1,8 @@
+{
+  "name": "VIKSIT BHARAT @ 2047",
+  "description": "Indian Tricolor based Sovereign Landing Page stating VIKSIT BHARAT @ 2047. Featuring revolving Ashoka Chakra, Saptarishi Vision Pillars, Live National Telemetry, Command AI Terminal, Citizen Pledge Certificate Generator, and Web Audio API synthesized sovereign fanfare.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

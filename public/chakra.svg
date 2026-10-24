@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-120 -120 240 240" width="100%" height="100%">
+  <defs>
+    <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#000080" />
+    </radialGradient>
+    <filter id="chakraNeon" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#0066cc" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle r="108" fill="none" stroke="#000080" stroke-width="7" />
+  <circle r="100" fill="none" stroke="#0044bb" stroke-width="2.5" />
+  <circle r="93" fill="none" stroke="#000080" stroke-width="2" />
+
+  <!-- 24 Circular Beads between Outer Ring and Spokes -->
+  <g fill="#000080">
+    <circle cx="0" cy="-96.5" r="3" />
+    <circle cx="25" cy="-93.2" r="3" />
+    <circle cx="48.2" cy="-83.6" r="3" />
+    <circle cx="68.2" cy="-68.2" r="3" />
+    <circle cx="83.6" cy="-48.2" r="3" />
+    <circle cx="93.2" cy="-25" r="3" />
+    <circle cx="96.5" cy="0" r="3" />
+    <circle cx="93.2" cy="25" r="3" />
+    <circle cx="83.6" cy="48.2" r="3" />
+    <circle cx="68.2" cy="68.2" r="3" />
+    <circle cx="48.2" cy="83.6" r="3" />
+    <circle cx="25" cy="93.2" r="3" />
+    <circle cx="0" cy="96.5" r="3" />
+    <circle cx="-25" cy="93.2" r="3" />
+    <circle cx="-48.2" cy="83.6" r="3" />
+    <circle cx="-68.2" cy="68.2" r="3" />
+    <circle cx="-83.6" cy="48.2" r="3" />
+    <circle cx="-93.2" cy="25" r="3" />
+    <circle cx="-96.5" cy="0" r="3" />
+    <circle cx="-93.2" cy="-25" r="3" />
+    <circle cx="-83.6" cy="-48.2" r="3" />
+    <circle cx="-68.2" cy="-68.2" r="3" />
+    <circle cx="-48.2" cy="-83.6" r="3" />
+    <circle cx="-25" cy="-93.2" r="3" />
+  </g>
+
+  <!-- 24 Spokes (15 deg intervals) -->
+  <g fill="#000080" stroke="#000080" stroke-width="0.5">
+    <!-- Spoke template: path d="M -2.5,22 L -0.5,93 L 0.5,93 L 2.5,22 Z" -->
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(0)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(15)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(30)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(45)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(60)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(75)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(90)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(105)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(120)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(135)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(150)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(165)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(180)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(195)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(210)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(225)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(240)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(255)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(270)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(285)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(300)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(315)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(330)" />
+    <path d="M -2.2,20 L -0.5,93 L 0.5,93 L 2.2,20 Z" transform="rotate(345)" />
+  </g>
+
+  <!-- Central Hub Layers -->
+  <circle r="22" fill="#000080" />
+  <circle r="15" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.9" />
+  <circle r="8" fill="url(#hubGlow)" />
+  <circle r="3" fill="#ffffff" />
+</svg>
