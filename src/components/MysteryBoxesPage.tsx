@@ -181,11 +181,11 @@ export const MysteryBoxesPage: React.FC<MysteryBoxesPageProps> = ({ onBack }) =>
           </div>
 
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-black uppercase font-display tracking-tight text-white pt-2">
-            UNWRAP YOUR <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF671F] via-white to-[#10b981]">PROJECTS</span>
+            UNWRAP THE <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF671F] via-white to-[#10b981]">PROJECTS</span>
           </h2>
 
           <p className="text-white/70 text-sm sm:text-base font-light max-w-xl mx-auto">
-            Three sealed Indian Tricolor Mystery Boxes containing your project destinations. Tap any box to break the sovereign seal and reveal the project portal!
+            Three sealed Indian Tricolor Mystery Boxes containing project destinations. Tap any box to break the sovereign seal and reveal the project portal!
           </p>
         </div>
 
