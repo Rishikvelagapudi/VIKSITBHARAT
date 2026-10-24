@@ -105,16 +105,32 @@ export const MovingBackground: React.FC = () => {
 
     const radiantColors: ('white' | 'saffron' | 'cyan' | 'gold')[] = ['white', 'saffron', 'cyan', 'gold'];
 
-    const radiantStars: RadiantStar[] = Array.from({ length: shiningStarCount }, () => ({
-      x: Math.random() * (width || window.innerWidth),
-      y: Math.random() * (height || window.innerHeight),
-      size: Math.random() * 12 + 10,
-      rotation: Math.random() * Math.PI * 2,
-      rotationSpeed: (Math.random() - 0.5) * 0.008,
-      pulseSpeed: Math.random() * 0.025 + 0.015,
-      phase: Math.random() * Math.PI * 2,
-      color: radiantColors[Math.floor(Math.random() * radiantColors.length)],
-    }));
+    const getSafeRadiantCoord = (w: number, h: number) => {
+      let x = Math.random() * w;
+      let y = Math.random() * h;
+      // Exclude center text reading zone (middle 60% horizontal, 32% to 82% vertical)
+      let attempts = 0;
+      while (x > w * 0.2 && x < w * 0.8 && y > h * 0.32 && y < h * 0.82 && attempts < 12) {
+        x = Math.random() * w;
+        y = Math.random() * h;
+        attempts++;
+      }
+      return { x, y };
+    };
+
+    const radiantStars: RadiantStar[] = Array.from({ length: shiningStarCount }, () => {
+      const coord = getSafeRadiantCoord(width || window.innerWidth, height || window.innerHeight);
+      return {
+        x: coord.x,
+        y: coord.y,
+        size: Math.random() * 12 + 10,
+        rotation: Math.random() * Math.PI * 2,
+        rotationSpeed: (Math.random() - 0.5) * 0.008,
+        pulseSpeed: Math.random() * 0.025 + 0.015,
+        phase: Math.random() * Math.PI * 2,
+        color: radiantColors[Math.floor(Math.random() * radiantColors.length)],
+      };
+    });
 
     // 3. Graceful Shooting Stars (Meteors)
     interface Meteor {

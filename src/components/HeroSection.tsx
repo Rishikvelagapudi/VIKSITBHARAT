@@ -55,24 +55,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           transition={{ duration: 0.7, delay: 0.2 }}
           className="space-y-4 max-w-5xl relative"
         >
-          {/* Floating Shining Stars around Typography */}
-          <div className="absolute -top-8 left-2 sm:left-12 z-20">
+          {/* Floating Shining Stars safely framing the Title (kept outside text reading zones) */}
+          <div className="absolute -top-8 left-2 sm:left-12 z-0 pointer-events-none">
             <ShiningStar size={46} color="saffron" delay={0.3} />
           </div>
-          <div className="absolute -top-6 right-2 sm:right-12 z-20">
+          <div className="absolute -top-6 right-2 sm:right-12 z-0 pointer-events-none">
             <ShiningStar size={50} color="gold" delay={0.9} />
           </div>
-          <div className="absolute top-1/2 -left-6 sm:left-2 z-20">
+          <div className="absolute top-10 -left-8 sm:-left-16 z-0 pointer-events-none">
             <ShiningStar size={36} color="cyan" delay={1.3} />
           </div>
-          <div className="absolute top-1/2 -right-6 sm:right-2 z-20">
+          <div className="absolute top-10 -right-8 sm:-right-16 z-0 pointer-events-none">
             <ShiningStar size={38} color="white" delay={0.7} />
-          </div>
-          <div className="absolute -bottom-6 left-1/4 z-20">
-            <ShiningStar size={32} color="saffron" delay={1.8} />
-          </div>
-          <div className="absolute -bottom-6 right-1/4 z-20">
-            <ShiningStar size={34} color="gold" delay={1.5} />
           </div>
 
           <h1 className="text-6xl sm:text-8xl md:text-9xl lg:text-[11rem] font-black uppercase tracking-tight font-display leading-[0.9] select-none relative z-10">
@@ -84,11 +78,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </span>
           </h1>
 
-          <p className="text-xl sm:text-2xl md:text-3xl font-bold font-display uppercase tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-white to-cyan-200 drop-shadow-[0_0_20px_rgba(255,255,255,0.4)] max-w-3xl mx-auto px-4 pt-4">
+          <p className="text-xl sm:text-2xl md:text-3xl font-bold font-display uppercase tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-white to-cyan-200 drop-shadow-[0_0_20px_rgba(255,255,255,0.4)] max-w-3xl mx-auto px-4 pt-4 relative z-10">
             “Let Youth Be The Frontier For Bharat”
           </p>
 
-          <p className="text-sm sm:text-base md:text-lg font-light text-white/80 max-w-2xl mx-auto tracking-wide leading-relaxed px-4 pt-1">
+          <p className="text-sm sm:text-base md:text-lg font-light text-white/90 max-w-2xl mx-auto tracking-wide leading-relaxed px-4 pt-1 relative z-10 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
             Empowering 1.4 Billion dreams through bold innovation, fearless intellect, and sovereign technological supremacy by 2047.
           </p>
         </motion.div>
